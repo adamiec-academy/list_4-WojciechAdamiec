@@ -1,2 +1,9 @@
 def min_max(data):
-    return 0, 0
+    min_val = data[0]
+    max_val = data[0]
+    for value in data:
+        if value > max_val:
+            max_val = value
+        elif value < min_val:
+            min_val = value
+    return min_val, max_val
