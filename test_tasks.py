@@ -34,11 +34,11 @@ def test_task_3_min_max(arg, expected_output):
 
 
 @pytest.mark.parametrize("a, b, expected_output", BORDER_MAP_DATA, ids=_data_args(BORDER_MAP_DATA))
-def test_task_4_tower(a, b, expected_output):
+def test_task_4_border_map(a, b, expected_output):
     from task_4 import border_map
     assert border_map(a, b) == expected_output
 
 
-def test_task_5_stars():
+def test_task_5_image_drawing():
     file = open("task_5.py", "r", encoding="utf-8")
     assert file.readline().strip() != "# Remove this comment to confirm that this task is done"
